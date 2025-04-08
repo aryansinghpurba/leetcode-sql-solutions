@@ -1,0 +1,4 @@
+# 1757. Recyclable and Low Fat Products
+select p.product_id from products p 
+where p.low_fats='Y' And P.recyclable ='Y'
+order by p.product_id desc;
