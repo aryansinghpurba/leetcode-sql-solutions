@@ -1,0 +1,4 @@
+SELECT num
+FROM ConsecutiveNumbers c
+WHERE EXISTS (SELECT 1 FROM ConsecutiveNumbers WHERE num = c.num - 1)
+  AND EXISTS (SELECT 1 FROM ConsecutiveNumbers WHERE num = c.num + 1);
