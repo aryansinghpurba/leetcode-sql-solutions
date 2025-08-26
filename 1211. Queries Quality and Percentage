@@ -1,0 +1,4 @@
+SELECT accepted,
+       ROUND(AVG(percentage), 2) AS avg_percentage
+FROM Queries
+GROUP BY accepted;
