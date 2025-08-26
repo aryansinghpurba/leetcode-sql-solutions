@@ -1,0 +1,4 @@
+SELECT e.name, p.projectName
+FROM Employee e
+JOIN Project p
+  ON e.projectId = p.projectId;
