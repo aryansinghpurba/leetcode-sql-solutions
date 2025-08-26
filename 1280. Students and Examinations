@@ -1,0 +1,5 @@
+SELECT s.name
+FROM Students s
+LEFT JOIN Examinations e
+  ON s.student_id = e.student_id
+WHERE e.exam_id IS NULL;
