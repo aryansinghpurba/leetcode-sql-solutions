@@ -1,0 +1,5 @@
+SELECT contest_id,
+       ROUND(SUM(attended) * 100.0 / COUNT(user_id), 2) AS attended_percent
+FROM ContestLog
+GROUP BY contest_id
+ORDER BY contest_id;
