@@ -1,0 +1,4 @@
+SELECT passenger_id
+FROM Bus
+ORDER BY seat_number DESC
+LIMIT 1;
