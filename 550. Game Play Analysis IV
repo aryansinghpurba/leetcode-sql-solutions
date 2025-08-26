@@ -1,0 +1,5 @@
+SELECT device_id,
+       COUNT(DISTINCT player_id) AS player_count
+FROM Activity
+GROUP BY device_id
+ORDER BY device_id;
