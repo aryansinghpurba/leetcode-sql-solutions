@@ -1,0 +1,3 @@
+SELECT COUNT(DISTINCT user_id) AS active_users
+FROM UsersActivity
+WHERE activity_date >= DATE_SUB(CURDATE(), INTERVAL 30 DAY);
