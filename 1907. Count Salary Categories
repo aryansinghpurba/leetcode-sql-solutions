@@ -1,0 +1,10 @@
+SELECT 
+    CASE 
+        WHEN salary < 4000 THEN 'Low Salary'
+        WHEN salary >= 4000 AND salary < 7000 THEN 'Average Salary'
+        ELSE 'High Salary'
+    END AS category,
+    COUNT(*) AS employee_count
+FROM Employee
+GROUP BY category
+ORDER BY category;
