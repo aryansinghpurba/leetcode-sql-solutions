@@ -1,0 +1,6 @@
+SELECT p.product_name,
+       IFNULL(SUM(s.quantity * s.price), 0) AS revenue
+FROM Product p
+LEFT JOIN Sales s
+  ON p.product_id = s.product_id
+GROUP BY p.product_id, p.product_name;
