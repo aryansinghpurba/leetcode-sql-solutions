@@ -1,0 +1,4 @@
+SELECT product,
+       ROUND(AVG(price), 2) AS avg_price
+FROM Sales
+GROUP BY product;
