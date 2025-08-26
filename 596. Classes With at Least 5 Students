@@ -1,0 +1,4 @@
+SELECT class_id
+FROM Student
+GROUP BY class_id
+HAVING COUNT(student_id) >= 5;
