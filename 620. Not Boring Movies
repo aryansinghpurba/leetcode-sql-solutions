@@ -1,0 +1,5 @@
+SELECT *
+FROM Cinema
+WHERE (rating > 5 AND year > 2000)
+   OR (rating <= 5 AND year <= 2000)
+ORDER BY id;
